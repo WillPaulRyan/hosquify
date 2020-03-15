@@ -1,0 +1,67 @@
+#track-view {
+  padding: 1rem;
+  background-color: #333;
+  min-height: calc(100vh - 100px);
+
+  display: flex;
+}
+
+#back {
+  align-self: flex-start;
+  cursor: pointer;
+  height: 40px;
+  fill: white;
+}
+
+#track-container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#track-info {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+}
+
+#track-info * {
+  margin: 0;
+}
+
+#cover {
+  /* margin-bottom: 1rem; */
+  height: 200px;
+  width: 200px;
+}
+
+#artist {
+  color: red;
+}
+
+#primary h1 {
+  font-size: 2rem;
+}
+
+#primary h2 {
+  font-size: 1.8rem;
+}
+
+#track-controls {
+  align-self: center;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#track-controls svg {
+  fill: white;
+  height: 2.5rem;
+  cursor: pointer;
+}
