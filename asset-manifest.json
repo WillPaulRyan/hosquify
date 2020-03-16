@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/hosquify/static/css/main.a6ff88c5.chunk.css",
+    "main.js": "/hosquify/static/js/main.7924c8b4.chunk.js",
+    "main.js.map": "/hosquify/static/js/main.7924c8b4.chunk.js.map",
+    "runtime-main.js": "/hosquify/static/js/runtime-main.f9e54b9f.js",
+    "runtime-main.js.map": "/hosquify/static/js/runtime-main.f9e54b9f.js.map",
+    "static/js/2.88ffd7f2.chunk.js": "/hosquify/static/js/2.88ffd7f2.chunk.js",
+    "static/js/2.88ffd7f2.chunk.js.map": "/hosquify/static/js/2.88ffd7f2.chunk.js.map",
+    "index.html": "/hosquify/index.html",
+    "precache-manifest.10dc2db46c7f765cc82130771e2d9506.js": "/hosquify/precache-manifest.10dc2db46c7f765cc82130771e2d9506.js",
+    "service-worker.js": "/hosquify/service-worker.js",
+    "static/css/main.a6ff88c5.chunk.css.map": "/hosquify/static/css/main.a6ff88c5.chunk.css.map",
+    "static/js/2.88ffd7f2.chunk.js.LICENSE.txt": "/hosquify/static/js/2.88ffd7f2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f9e54b9f.js",
+    "static/js/2.88ffd7f2.chunk.js",
+    "static/css/main.a6ff88c5.chunk.css",
+    "static/js/main.7924c8b4.chunk.js"
+  ]
+}
