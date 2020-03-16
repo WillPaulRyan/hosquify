@@ -60,7 +60,27 @@ export default class Track extends React.Component {
               <path className="next" d="M0 0h24v24H0z" fill="none"/>
             </svg>
           </div>
-          <div id="share"></div>
+          <div id="share">
+            {/* Facebook (url) */}
+            <a href={`https://www.facebook.com/sharer/sharer.php?u=willpaulryan.github.io/hosquify`}
+                className="share-btn facebook"
+                target="_blank" rel="noopener noreferrer" >              
+              Facebook
+            </a>
+
+            {/* Twitter (url, text, @mention) */}
+            <a href={`https://twitter.com/share?url=willpaulryan.github.io/hosquify&text=Listening%20to%20${this.props.data.artistName}%20%2D%20${this.props.data.trackName}%20on%20Hosquify!`} 
+                className="share-btn twitter"
+                target="_blank" rel="noopener noreferrer" >
+              Twitter
+            </a>
+            {/* LinkedIn (url, title, summary, source url) */}
+            <a href={`https://www.linkedin.com/shareArticle?url=willpaulryan.github.io/hosquify&title=Hosquify&summary=Listening%20to%20${this.props.data.artistName}%20%2D%20${this.props.data.trackName}%20on%20Hosquify!&source=willpaulryan.github.io/hosquify`}
+                className="share-btn linkedin"
+                target="_blank" rel="noopener noreferrer" >
+              LinkedIn
+            </a>
+          </div>
         </div>
       </section>
     )

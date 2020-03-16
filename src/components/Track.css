@@ -65,3 +65,41 @@
   height: 2.5rem;
   cursor: pointer;
 }
+
+#share {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/** Social Button CSS **/
+.share-btn {
+  display: inline-block;
+  color: #ffffff;
+  border: none;
+  padding: .5rem 1rem;
+  outline: none;
+  text-align: center;
+  font-size: 0.9em;
+  margin: 0 0.2em;
+  text-decoration: none;
+}
+
+.share-btn:focus,
+.share-btn:hover {
+  opacity: 0.8;
+}
+
+.share-btn:active {
+  color: #e2e2e2;
+}
+
+.share-btn.twitter { background: #55acee; }
+.share-btn.google-plus { background: #dd4b39; }
+.share-btn.facebook { background: #3B5998; }
+.share-btn.stumbleupon { background: #EB4823; }
+.share-btn.reddit { background: #ff5700; }
+.share-btn.hackernews { background: #ff6600; }
+.share-btn.linkedin    { background: #4875B4; }
+.share-btn.email { background: #444444; }
