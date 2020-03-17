@@ -8,10 +8,13 @@ export default class App extends React.Component {
   state = {
     search: '',
     data: {},
-    isLoaded: false,
+    resultsLoaded: false,
     trackView: false,
     trackSelected: 0,
     currentSong: '',
+    sortLength: false,
+    sortGenre: false,
+    sortPrice: false,
   }
 
   audioControls = (event) => {
@@ -78,21 +81,62 @@ export default class App extends React.Component {
   }
 
   async search() {
-    this.setState({isLoaded: false, trackView: false})
+    this.setState({resultsLoaded: false, trackView: false})
     await fetch(`https://itunes.apple.com/search?term=${encodeURIComponent(this.state.search)}&media=music`)
       .then(res => {return res.json()})
       .then(data => {
         this.setState({
           data,
-          isLoaded: true,
+          resultsLoaded: true,
+          sortLength: false,
+          sortGenre: false,
+          sortPrice: false,
         })
       })
-      .catch(err => console.error(err));
+      .catch(err => {
+        console.error(err)
+        this.setState({resultsLoaded: true, data: {}})
+      });
   }
   
+  sortData = (event) => {
+    let data = this.state.data
+
+    if (event.target.id === 'length') {
+      data.results.sort((a, b) => {
+        return a.trackTimeMillis - b.trackTimeMillis
+      })
+      this.setState({data, sortLength: true, sortGenre: false, sortPrice: false})
+    } else if (event.target.id === "genre") {
+      data.results.sort((a, b) => {
+        return a.primaryGenreName.localeCompare(b.primaryGenreName)
+      })
+      this.setState({data, sortLength: false, sortGenre: true, sortPrice: false})
+    } else if (event.target.id === "price") {
+      data.results.sort((a, b) => {
+        return a.trackPrice - b.trackPrice
+      })
+      this.setState({data, sortLength: false, sortGenre: false, sortPrice: true})
+    }
+  }
+
+  reset() {
+    this.setState({
+      search: '',
+      data: {},
+      resultsLoaded: false,
+      trackView: false,
+      // trackSelected: 0,
+      sortLength: false,
+      sortGenre: false,
+      sortPrice: false,  
+    })
+    
+  }
+
   render() {
     let results;
-    if (this.state.isLoaded) {
+    if (this.state.resultsLoaded) {
       if (!this.state.data.resultCount) {
         results = <h2 id="no-results" >No results</h2>
       } else {
@@ -107,7 +151,7 @@ export default class App extends React.Component {
         <audio id="audio" src={this.state.currentSong} 
           crossOrigin="anonymous" preload="true" autoPlay />
         <section id="search-container">
-          <a href="/" tabIndex="1"><img src="./logo_simple.png" alt="Hosquify logo" /></a>
+          <img onClick={this.reset.bind(this)} tabIndex="1" src="./logo_simple.png" alt="Hosquify logo" />
           <Form 
             handleChange={this.handleChange}
             handleKeyPress={this.handleKeyPress}
@@ -121,7 +165,24 @@ export default class App extends React.Component {
               audioControls={this.audioControls}
               handleKeyPressAudio={this.handleKeyPressAudio}
             />
-          : <section id="results-container">{this.state.isLoaded ? results : ''}</section>
+          : <section id="results-container">
+              {this.state.resultsLoaded 
+                ? <div id="sort-results" >
+                    {this.state.data.resultCount
+                      ? <div id="sort-container">
+                          <h3 id="sort-label">Sort by...</h3>
+                          <div id="sort-capsule">
+                            <div id="length" className={this.state.sortLength ? 'active' : ''} onClick={this.sortData.bind(this)}>Length</div>
+                            <div id="genre" className={this.state.sortGenre ? 'active' : ''} onClick={this.sortData.bind(this)}>Genre</div>
+                            <div id="price" className={this.state.sortPrice ? 'active' : ''} onClick={this.sortData.bind(this)}>Price</div>
+                          </div>
+                        </div>
+                      : ''
+                    }
+                    <div id="results">{results}</div>
+                  </div>
+                : ''}
+            </section>
         }
       </div>
     );
