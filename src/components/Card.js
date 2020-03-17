@@ -3,12 +3,6 @@ import './Card.css'
 
 export default class App extends React.Component {
 
-  handleKeyPress = (event) => {
-    if(event.which === 13 || event.keyCode === 13) {
-      this.props.handleClick();
-    }
-  }
-
   millisToMinutesAndSeconds(millis) {
     var minutes = Math.floor(millis / 60000);
     var seconds = ((millis % 60000) / 1000).toFixed(0);
@@ -17,7 +11,7 @@ export default class App extends React.Component {
   
   render() {    
     return(
-      <div className="card" tabIndex={this.props.listId + 3} onClick={this.props.handleClick} onKeyPress={this.handleKeyPress} >
+      <button className="card" onClick={this.props.handleClick} >
         <div className="thumb-container" style={{backgroundImage: `url(${this.props.data.artworkUrl100})`}}>
           <span className="length">{this.millisToMinutesAndSeconds(this.props.data.trackTimeMillis)}</span>
         </div>
@@ -32,7 +26,7 @@ export default class App extends React.Component {
           ? <h4 className="price">${this.props.data.trackPrice}</h4>
           : <h4 className="price">Unavailable</h4>}
         </div>
-      </div>
+      </button>
     )
   }
 

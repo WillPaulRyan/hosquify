@@ -1,5 +1,5 @@
 #search {
-  margin: auto;
+  /* margin: auto; */
   padding: 1rem 2rem 1rem 3.5rem;
   width: 30%;
   font-size: 1.5rem;
@@ -17,7 +17,12 @@
 
 #search:focus {
   width: 45%;
-}
+  outline: 1px solid transparent;
+  box-shadow:
+    0 0 0 5px #111,
+    0 0 0 10px var(--primary)
+  ;
+  }
 #search:focus::placeholder {
   color: transparent;
 }

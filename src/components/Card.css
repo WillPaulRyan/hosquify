@@ -5,14 +5,14 @@
   display: flex;
 /*   align-items: center; */
   cursor: pointer;
-  
   border-left: .5rem solid white;
 }
 
 .card:hover,
 .card:focus {
   outline: 0;
-  border-color: red;
+  border-color: var(--primary);
+  outline: none;
 }
 
 .thumb-container {
@@ -53,11 +53,11 @@
 }
 
 .artist {
-  color: red;
+  color: var(--secondary);
 }
 
 .price {
-  color: red;
+  color: var(--secondary) ;
   position: absolute;
   bottom: 0;
   right: 0;

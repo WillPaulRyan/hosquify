@@ -7,10 +7,19 @@
 }
 
 #back {
-  align-self: flex-start;
-  cursor: pointer;
+  position: absolute;
   height: 40px;
-  fill: white;
+  width: 40px;
+  padding: 0;
+  background-size: contain;
+  background-image: url('/back.svg');
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#back:focus {
+  outline: 3px solid var(--primary);
+  outline-offset: 3px;
 }
 
 #track-container {
@@ -41,7 +50,7 @@
 }
 
 #artist {
-  color: red;
+  color: var(--primary);
 }
 
 #primary h1 {
@@ -60,11 +69,33 @@
   align-items: center;
 }
 
-#track-controls svg {
-  fill: white;
-  height: 2.5rem;
+#track-controls button {
+  height: 3rem;
+  width: 3rem;
+  padding: 0;
+  background-size: contain;
+  background-color: transparent;
   cursor: pointer;
 }
+#track-controls button:hover,
+#track-controls button:focus {
+  outline: 3px solid var(--primary);
+}
+
+#previous {
+  background-image: url('/audio_controls/previous.svg');
+}
+#play {
+  background-image: url('/audio_controls/play.svg');
+}
+#pause {
+  background-image: url('/audio_controls/pause.svg');
+}
+#next {
+  background-image: url('/audio_controls/next.svg');
+}
+
+
 
 #share {
   margin-top: 1rem;
@@ -72,12 +103,10 @@
   align-items: center;
   justify-content: center;
 }
-
 /** Social Button CSS **/
 .share-btn {
   display: inline-block;
   color: #ffffff;
-  border: none;
   padding: .5rem 1rem;
   outline: none;
   text-align: center;
