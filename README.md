@@ -4,7 +4,7 @@ A Spotify-inspired music client, using Apple's [iTunes Search API](https://affil
 
 ## Getting Started
 
-Navigate to the project's root directory and run `docker-compose up -d` to run the program on your machine. Hosquify will deploy on `localhost` or `192.168.99.100`, depending on your Docker configuration,
+Navigate to the project's root directory and run `sudo docker-compose up -d` to run the program on your machine. Hosquify will deploy on `localhost` or `192.168.99.100`, depending on your Docker configuration,
 
 Alternatively, the program can be run with npm by using `npm run start` in the project root directory.
 
@@ -14,7 +14,7 @@ Docker and docker-compose are required to deploy Hosquify on Docker, or nodejs a
 
 ### Installing
 
-`git pull` the repository, then run `docker-compose up -d` in the project's root directory, and you'll be up and running.
+`git pull` the repository, then run `sudo docker-compose up -d` in the project's root directory, and you'll be up and running.
 
 ## Built With
 
