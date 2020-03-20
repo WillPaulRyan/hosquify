@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "./static/css/main.20ed099a.chunk.css",
-    "main.js": "./static/js/main.c6a4065d.chunk.js",
-    "main.js.map": "./static/js/main.c6a4065d.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.bec16e8d.js",
-    "runtime-main.js.map": "./static/js/runtime-main.bec16e8d.js.map",
-    "static/js/2.fe05cde3.chunk.js": "./static/js/2.fe05cde3.chunk.js",
-    "static/js/2.fe05cde3.chunk.js.map": "./static/js/2.fe05cde3.chunk.js.map",
-    "index.html": "./index.html",
-    "precache-manifest.fd8607beb1f7273a23869ad7a3e8a925.js": "./precache-manifest.fd8607beb1f7273a23869ad7a3e8a925.js",
-    "service-worker.js": "./service-worker.js",
-    "static/css/main.20ed099a.chunk.css.map": "./static/css/main.20ed099a.chunk.css.map",
-    "static/js/2.fe05cde3.chunk.js.LICENSE.txt": "./static/js/2.fe05cde3.chunk.js.LICENSE.txt"
+    "main.css": "/willpaulryan.github.io/hosquify/static/css/main.0b262469.chunk.css",
+    "main.js": "/willpaulryan.github.io/hosquify/static/js/main.73851930.chunk.js",
+    "main.js.map": "/willpaulryan.github.io/hosquify/static/js/main.73851930.chunk.js.map",
+    "runtime-main.js": "/willpaulryan.github.io/hosquify/static/js/runtime-main.08518516.js",
+    "runtime-main.js.map": "/willpaulryan.github.io/hosquify/static/js/runtime-main.08518516.js.map",
+    "static/js/2.fe05cde3.chunk.js": "/willpaulryan.github.io/hosquify/static/js/2.fe05cde3.chunk.js",
+    "static/js/2.fe05cde3.chunk.js.map": "/willpaulryan.github.io/hosquify/static/js/2.fe05cde3.chunk.js.map",
+    "index.html": "/willpaulryan.github.io/hosquify/index.html",
+    "precache-manifest.da47e026649771b8640423762b51140e.js": "/willpaulryan.github.io/hosquify/precache-manifest.da47e026649771b8640423762b51140e.js",
+    "service-worker.js": "/willpaulryan.github.io/hosquify/service-worker.js",
+    "static/css/main.0b262469.chunk.css.map": "/willpaulryan.github.io/hosquify/static/css/main.0b262469.chunk.css.map",
+    "static/js/2.fe05cde3.chunk.js.LICENSE.txt": "/willpaulryan.github.io/hosquify/static/js/2.fe05cde3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.bec16e8d.js",
+    "static/js/runtime-main.08518516.js",
     "static/js/2.fe05cde3.chunk.js",
-    "static/css/main.20ed099a.chunk.css",
-    "static/js/main.c6a4065d.chunk.js"
+    "static/css/main.0b262469.chunk.css",
+    "static/js/main.73851930.chunk.js"
   ]
 }
