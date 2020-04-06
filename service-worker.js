@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/hosquify/precache-manifest.26f9d05b7d5dedd76f9e09d98e0a7385.js"
+  "/hosquify/precache-manifest.bbd712ff8b09eafc745faef183b01b8e.js"
 );
 
 self.addEventListener('message', (event) => {
