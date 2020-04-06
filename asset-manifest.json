@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/hosquify/static/css/main.0b262469.chunk.css",
+    "main.css": "/hosquify/static/css/main.1582b007.chunk.css",
     "main.js": "/hosquify/static/js/main.b845d64f.chunk.js",
     "main.js.map": "/hosquify/static/js/main.b845d64f.chunk.js.map",
     "runtime-main.js": "/hosquify/static/js/runtime-main.b88348af.js",
@@ -8,15 +8,18 @@
     "static/js/2.92dfcefd.chunk.js": "/hosquify/static/js/2.92dfcefd.chunk.js",
     "static/js/2.92dfcefd.chunk.js.map": "/hosquify/static/js/2.92dfcefd.chunk.js.map",
     "index.html": "/hosquify/index.html",
-    "precache-manifest.ddf011722bec4d44db4c9aaf97a42e08.js": "/hosquify/precache-manifest.ddf011722bec4d44db4c9aaf97a42e08.js",
+    "precache-manifest.0ff0eaa37d102d92f792a9c4ac85b9d4.js": "/hosquify/precache-manifest.0ff0eaa37d102d92f792a9c4ac85b9d4.js",
     "service-worker.js": "/hosquify/service-worker.js",
-    "static/css/main.0b262469.chunk.css.map": "/hosquify/static/css/main.0b262469.chunk.css.map",
-    "static/js/2.92dfcefd.chunk.js.LICENSE.txt": "/hosquify/static/js/2.92dfcefd.chunk.js.LICENSE.txt"
+    "static/css/main.1582b007.chunk.css.map": "/hosquify/static/css/main.1582b007.chunk.css.map",
+    "static/js/2.92dfcefd.chunk.js.LICENSE.txt": "/hosquify/static/js/2.92dfcefd.chunk.js.LICENSE.txt",
+    "static/media/Track.css": "/hosquify/static/media/previous.0d331ab2.svg",
+    "static/media/App.css": "/hosquify/static/media/logo_simple.53222f86.png",
+    "static/media/Form.css": "/hosquify/static/media/search_icon.236cbe7b.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.b88348af.js",
     "static/js/2.92dfcefd.chunk.js",
-    "static/css/main.0b262469.chunk.css",
+    "static/css/main.1582b007.chunk.css",
     "static/js/main.b845d64f.chunk.js"
   ]
 }
