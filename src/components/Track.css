@@ -1,0 +1,134 @@
+#track-view {
+  padding: 1rem;
+  background-color: #333;
+  min-height: calc(100vh - 100px);
+
+  display: flex;
+}
+
+#back {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  background-size: contain;
+  background-image: url('/back.svg');
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#back:focus {
+  outline: 3px solid var(--primary);
+  outline-offset: 3px;
+}
+
+#track-container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#track-info {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+}
+
+#track-info * {
+  margin: 0;
+}
+
+#cover {
+  /* margin-bottom: 1rem; */
+  height: 200px;
+  width: 200px;
+}
+
+#artist {
+  color: var(--primary);
+}
+
+#primary h1 {
+  font-size: 2rem;
+}
+
+#primary h2 {
+  font-size: 1.8rem;
+}
+
+#track-controls {
+  align-self: center;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#track-controls button {
+  height: 3rem;
+  width: 3rem;
+  padding: 0;
+  background-size: contain;
+  background-color: transparent;
+  cursor: pointer;
+}
+#track-controls button:hover,
+#track-controls button:focus {
+  outline: 3px solid var(--primary);
+}
+
+#previous {
+  background-image: url('/audio_controls/previous.svg');
+}
+#play {
+  background-image: url('/audio_controls/play.svg');
+}
+#pause {
+  background-image: url('/audio_controls/pause.svg');
+}
+#next {
+  background-image: url('/audio_controls/next.svg');
+}
+
+
+
+#share {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/** Social Button CSS **/
+.share-btn {
+  display: inline-block;
+  color: #ffffff;
+  padding: .5rem 1rem;
+  outline: none;
+  text-align: center;
+  font-size: 0.9em;
+  margin: 0 0.2em;
+  text-decoration: none;
+}
+
+.share-btn:focus,
+.share-btn:hover {
+  opacity: 0.8;
+}
+
+.share-btn:active {
+  color: #e2e2e2;
+}
+
+.share-btn.twitter { background: #55acee; }
+.share-btn.google-plus { background: #dd4b39; }
+.share-btn.facebook { background: #3B5998; }
+.share-btn.stumbleupon { background: #EB4823; }
+.share-btn.reddit { background: #ff5700; }
+.share-btn.hackernews { background: #ff6600; }
+.share-btn.linkedin    { background: #4875B4; }
+.share-btn.email { background: #444444; }

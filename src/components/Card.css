@@ -1,0 +1,64 @@
+.card {
+  padding: 1.5rem 1.5rem 1.5rem 1rem;
+  margin: 1rem;
+  background-color: white;
+  display: flex;
+/*   align-items: center; */
+  cursor: pointer;
+  border-left: .5rem solid white;
+}
+
+.card:hover,
+.card:focus {
+  outline: 0;
+  border-color: var(--primary);
+  outline: none;
+}
+
+.thumb-container {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin-right: 1rem;
+}
+
+.length {
+  color: white;
+  background-color: black;
+  padding: 1px 5px;
+  position: absolute;
+  z-index: 999;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  width: min-content;
+}
+
+.info {
+  height: 100px;
+  width: 150px;
+  position: relative;
+}
+
+.info * {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.primary {
+  margin-bottom: 1rem;
+}
+
+.artist {
+  color: var(--secondary);
+}
+
+.price {
+  color: var(--secondary) ;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
