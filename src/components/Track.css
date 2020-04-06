@@ -12,7 +12,7 @@
   width: 40px;
   padding: 0;
   background-size: contain;
-  background-image: url('/back.svg');
+  background-image: url('../images/back.svg');
   background-color: transparent;
   cursor: pointer;
 }
@@ -83,16 +83,16 @@
 }
 
 #previous {
-  background-image: url('/audio_controls/previous.svg');
+  background-image: url('../images/audio_controls/previous.svg');
 }
 #play {
-  background-image: url('/audio_controls/play.svg');
+  background-image: url('../images/audio_controls/play.svg');
 }
 #pause {
-  background-image: url('/audio_controls/pause.svg');
+  background-image: url('../images/audio_controls/pause.svg');
 }
 #next {
-  background-image: url('/audio_controls/next.svg');
+  background-image: url('../images/audio_controls/next.svg');
 }
 
 
